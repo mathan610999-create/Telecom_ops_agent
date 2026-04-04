@@ -1,0 +1,5 @@
+.env
+telecom_ops.db
+__pycache__/
+*.pyc
+.venv/
