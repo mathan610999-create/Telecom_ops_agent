@@ -286,8 +286,8 @@ def run_sql(query: str) -> str:
 
 SYSTEM_PROMPT = """You are a Telecom Operations Intelligence Agent with deep expertise in:
 - MNP (Mobile Number Portability) incident diagnosis and resolution
-- KYC/AML ETL pipeline monitoring (M-Pesa style workflows)
-- Customer account troubleshooting across Liberty Global-style systems
+- KYC/AML ETL pipeline monitoring (SwiftPay style workflows)
+- Customer account troubleshooting across NovaTel Communications-style systems
 
 You have memory of the full conversation — use it to handle follow-up questions naturally.
 
@@ -417,7 +417,7 @@ st.markdown("""
     <div class="ops-title">🛰️ Telecom Ops Intelligence Agent</div>
     <div class="ops-subtitle">
         <span class="status-dot"></span>
-        LANGGRAPH · CLAUDE · SQLITE · LIBERTY GLOBAL + M-PESA WORKFLOWS
+        LANGGRAPH · CLAUDE · SQLITE · LIBERTY GLOBAL + SWIFTPAY WORKFLOWS
     </div>
 </div>
 """, unsafe_allow_html=True)
