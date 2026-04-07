@@ -8,10 +8,17 @@ import sqlite3
 import os
 import uuid
 from dotenv import load_dotenv
+
+load_dotenv()
+
+# DB_PATH must be defined BEFORE the DB check
+DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "telecom_ops.db")
+
 # Auto-create DB if it doesn't exist
 from setup_db import setup_database
 if not os.path.exists(DB_PATH):
     setup_database()
+
 from langchain_anthropic import ChatAnthropic
 from langchain_core.tools import tool
 from langgraph.prebuilt import create_react_agent
