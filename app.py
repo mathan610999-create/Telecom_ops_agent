@@ -8,7 +8,10 @@ import sqlite3
 import os
 import uuid
 from dotenv import load_dotenv
-
+# Auto-create DB if it doesn't exist
+from setup_db import setup_database
+if not os.path.exists(DB_PATH):
+    setup_database()
 from langchain_anthropic import ChatAnthropic
 from langchain_core.tools import tool
 from langgraph.prebuilt import create_react_agent
